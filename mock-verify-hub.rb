@@ -10,3 +10,7 @@ post '/api/session' do
   '{"x_govuk_session_cookie":"","x-govuk-secure-cookie":"","session_start_time":' + session_start_time + '}'
 end
 
+get '/api/session/federation' do
+  '{"transactionSimpleId":"test-rp","transactionEntityId":"http://example.com/test-rp","idps":["stub-idp-one"]}'
+end
+
