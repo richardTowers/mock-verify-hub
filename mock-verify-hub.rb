@@ -26,3 +26,16 @@ get '/api/session/federation' do
   eos
 end
 
+get '/api/transactions' do
+  <<-eos
+  {
+    "public":[{
+      "simpleId":"test-rp",
+      "entityId":"http://example.com/test-rp",
+      "homepage":"http://example.com/test-rp"
+    }],
+    "private":[]
+  }
+  eos
+end
+
