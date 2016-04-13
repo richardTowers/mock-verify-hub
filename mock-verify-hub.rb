@@ -37,6 +37,17 @@ put '/api/session/select-idp' do
   eos
 end
 
+get '/api/session/idp-authn-request' do
+  <<-eos
+  {
+    "location":"http://www.example.com",
+    "samlRequest":"blah",
+    "relayState":"whatever",
+    "registration":false
+  }
+  eos
+end
+
 get '/api/transactions' do
   <<-eos
   {
