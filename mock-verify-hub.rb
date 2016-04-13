@@ -21,7 +21,10 @@ get '/api/session/federation' do
   {
     "transactionSimpleId":"test-rp",
     "transactionEntityId":"http://example.com/test-rp",
-    "idps":["stub-idp-one"]
+    "idps":[{
+      "simpleId":"stub-idp-one",
+      "entityId":"http://example.com/stub-idp-one"
+    }]
   }
   eos
 end
