@@ -29,6 +29,14 @@ get '/api/session/federation' do
   eos
 end
 
+put '/api/session/select-idp' do
+  <<-eos
+  {
+    "encryptedEntityId":"not-blank"
+  }
+  eos
+end
+
 get '/api/transactions' do
   <<-eos
   {
