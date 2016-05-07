@@ -7,9 +7,10 @@ set :port, 50190
 post '/api/session' do
   status 201
   %({
-    "x_govuk_session_cookie":"",
-    "x-govuk-secure-cookie":"",
-    "session_start_time":32503680000000
+    "sessionId":"blah",
+    "secureCookie":"blah",
+    "sessionStartTime":32503680000000,
+    "transactionSimpleId":"test-rp"
   })
 end
 
