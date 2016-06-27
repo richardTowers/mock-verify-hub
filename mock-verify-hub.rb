@@ -16,8 +16,6 @@ end
 
 get '/api/session/federation' do
   %({
-    "transactionSimpleId":"test-rp",
-    "transactionEntityId":"http://example.com/test-rp",
     "idps":[{
       "simpleId":"stub-idp-one",
       "entityId":"http://example.com/stub-idp-one"
